@@ -1,0 +1,957 @@
+C00037
+Glycine; Aminoacetic acid; Gly
+C00041
+L-Alanine; L-2-Aminopropionic acid; L-alpha-Alanine
+C00045
+Amino acid; Amino acids
+C00047
+L-Lysine; Lysine acid; 2,6-Diaminohexanoic acid
+C00049
+L-Aspartate; L-Aspartic acid; 2-Aminosuccinic acid; L-Asp
+C00062
+L-Arginine; (S)-2-Amino-5-guanidinovaleric acid; L-Arg
+C00064
+L-Glutamine; L-2-Aminoglutaramic acid
+C00065
+L-Serine; L-2-Amino-3-hydroxypropionic acid; L-3-Hydroxy-alanine; Serine
+C00073
+L-Methionine; Methionine; L-2-Amino-4methylthiobutyric acid
+C00077
+L-Ornithine; (S)-2,5-Diaminovaleric acid; (S)-2,5-Diaminopentanoic acid; (S)-2,5-Diaminopentanoate
+C00078
+L-Tryptophan; Tryptophan; (S)-alpha-Amino-beta-(3-indolyl)-propionic acid
+C00079
+L-Phenylalanine; (S)-alpha-Amino-beta-phenylpropionic acid
+C00082
+L-Tyrosine; (S)-3-(p-Hydroxyphenyl)alanine; (S)-2-Amino-3-(p-hydroxyphenyl)propionic acid; Tyrosine
+C00097
+L-Cysteine; L-2-Amino-3-mercaptopropionic acid
+C00099
+beta-Alanine; 3-Aminopropionic acid; 3-Aminopropanoate
+C00108
+Anthranilate; Anthranilic acid; o-Aminobenzoic acid; Vitamin L1; 2-Aminobenzoate
+C00123
+L-Leucine; 2-Amino-4-methylvaleric acid; (2S)-alpha-2-Amino-4-methylvaleric acid; (2S)-alpha-Leucine
+C00133
+D-Alanine; D-2-Aminopropionic acid; D-Ala
+C00135
+L-Histidine; (S)-alpha-Amino-1H-imidazole-4-propionic acid
+C00151
+L-Amino acid; L-2-Amino acid
+C00152
+L-Asparagine; 2-Aminosuccinamic acid
+C00155
+L-Homocysteine; L-2-Amino-4-mercaptobutyric acid; Homocysteine
+C00183
+L-Valine; 2-Amino-3-methylbutyric acid
+C00188
+L-Threonine; 2-Amino-3-hydroxybutyric acid
+C00217
+D-Glutamate; D-Glutamic acid; D-Glutaminic acid; D-2-Aminoglutaric acid
+C00245
+Taurine; 2-Aminoethanesulfonic acid; Aminoethylsulfonic acid
+C00263
+L-Homoserine; 2-Amino-4-hydroxybutyric acid
+C00302
+Glutamate; Glutaminic acid; 2-Aminoglutaric acid
+C00303
+Glutamine; 2-Aminoglutaramic acid
+C00308
+Canavanine; L-Canavanine; 2-Amino-4-(guanidinooxy)butyric acid
+C00327
+L-Citrulline; 2-Amino-5-ureidovaleric acid; Citrulline
+C00334
+4-Aminobutanoate; 4-Aminobutanoic acid; 4-Aminobutyrate; 4-Aminobutyric acid; gamma-Aminobutyric acid; GABA
+C00405
+D-Amino acid
+C00407
+L-Isoleucine; 2-Amino-3-methylvaleric acid
+C00430
+5-Aminolevulinate; 5-Amino-4-oxopentanoate; 5-Amino-4-oxovaleric acid
+C00431
+5-Aminopentanoate; 5-Aminopentanoic acid; 5-Aminovaleric acid
+C00449
+N6-(L-1,3-Dicarboxypropyl)-L-lysine; Saccharopine; L-Saccharopine; N-[(S)-5-Amino-5-carboxypentyl]-L-glutamic acid
+C00491
+L-Cystine; L-Dicysteine; L-alpha-Diamino-beta-dithiolactic acid
+C00506
+L-Cysteate; L-Cysteic acid; 3-Sulfoalanine; 2-Amino-3-sulfopropionic acid
+C00519
+Hypotaurine; 2-Aminoethanesulfinic acid
+C00568
+4-Aminobenzoate; ABEE; 4-Aminobenzoic acid; p-Aminobenzoate
+C00666
+LL-2,6-Diaminoheptanedioate; LL-2,6-Diaminopimelate; LL-2,6-Diaminopimelic acid
+C00680
+meso-2,6-Diaminoheptanedioate; meso-2,6-Diaminopimelate; meso-2,6-Diaminopimelic acid; meso-Diaminoheptanedioate
+C00716
+Serine; 2-Amino-3-hydroxypropionic acid; 3-Hydroxyalanine
+C00736
+Cysteine; 2-Amino-3-mercaptopropionic acid
+C00739
+D-Lysine; D-2,6-Diaminohexanoic acid
+C00768
+Histidine; alpha-Amino-1H-imidazole-4-propionic acid
+C00792
+D-Arginine; D-2-Amino-5-guanidinovaleric acid
+C00793
+D-Cysteine; D-Amino-3-mercaptopropionic acid
+C00806
+Tryptophan; alpha-Amino-beta-(3-indolyl)-propionic acid
+C00819
+D-Glutamine; D-2-Aminoglutaramic acid
+C00820
+D-Threonine; D-2-Amino-3-hydroxybutyric acid
+C00855
+D-Methionine; D-2-Amino-4-(methylthio)butyric acid
+C00857
+Deamino-NAD+; Deamido-NAD+; Deamido-NAD; Nicotinic acid adenine dinucleotide
+C00872
+Aminomalonate; Aminomalonic acid; 2-Aminomalonic acid
+C00956
+L-2-Aminoadipate; L-alpha-Aminoadipate; L-alpha-Aminoadipic acid; L-2-Aminoadipic acid; L-2-Aminohexanedioate
+C01021
+Aromatic amino acid; Aromatic L-amino acid
+C01037
+7,8-Diaminononanoate; 7,8-Diaminopelargonic acid; DAPA
+C01076
+N-Terminal amino acid
+C01092
+8-Amino-7-oxononanoate; 8-Amino-7-oxononanoic acid; 7-Keto-8-aminopelargonic acid; KAPA
+C01110
+5-Amino-2-oxopentanoic acid; 5-Amino-2-oxopentanoate; 2-Oxo-5-amino-pentanoate; 2-Oxo-5-aminopentanoate; alpha-Keto-delta-aminopentanoate; 2-Oxo-5-aminovalerate
+C01234
+1-Aminocyclopropane-1-carboxylate; 1-Aminocyclopropane-1-carboxylic acid
+C01401
+Alanine; 2-Aminopropionic acid; 2-Aminopropanoic acid
+C01420
+Cystine; Dicysteine; alpha-Diamino-beta-dithiolactic acid
+C01513
+Lupinate; Lupinic acid; 3-[N6-(4-Hydroxyisopentenyl)adeninyl]-L-alanine; (S)-2-Amino-3-{[(E)-4-hydroxy-3-methylbut-2-enylamino]purin-9-yl}propanoic acid
+C01536
+Tyrosine; 3-(p-Hydroxyphenyl)alanine; 2-Amino-3-(p-hydroxyphenyl)propionic acid
+C01563
+Carbamate; Carbamic acid; Aminoformic acid
+C01570
+D-Leucine; D-2-Amino-4-methylvaleric acid
+C01586
+Hippurate; Hippuric acid; N-Benzoylglycine; Benzoylaminoacetic acid
+C01602
+Ornithine; 2,5-Diaminovaleric acid; 2,5-Diaminopentanoic acid; 2,5-Diaminopentanoate
+C01614
+Sulfamate; Sulfamic acid; Amidosulfuric acid; Sulfamidic acid; Aminosulfonic acid
+C01733
+Methionine; 2-Amino-4-(methylthio)butyric acid
+C01799
+D-Norvaline; D-2-Aminovaleric acid; D-2-Aminopentanoic acid
+C01826
+L-Norvaline; L-2-Aminovaleric acid; L-2-Aminopentanoic acid; (S)-2-Aminopentanoic acid
+C01933
+L-Norleucine; L-Aminohexanoic acid; L-Aminohexanoate; L-2-Aminohexanoic acid; L-2-Aminohexanoate; (S)-2-Aminohexanoic acid
+C02057
+Phenylalanine; alpha-Amino-beta-phenylpropionic acid
+C02220
+2-Aminomuconate; 2-Aminomuconic acid; o-Aminomuconate
+C02261
+D-2-Aminobutyrate; D-2-Aminobutyric acid; D-2-Aminobutanoic acid; (R)-2-Aminobutanoic acid
+C02265
+D-Phenylalanine; D-alpha-Amino-beta-phenylpropionic acid
+C02356
+(S)-2-Aminobutanoate; (S)-2-Aminobutanoic acid; (S)-2-Aminobutyric acid
+C02362
+2-Oxosuccinamate; 2-Oxosuccinamic acid; gamma-Aminooxaloacetate; Oxaloacetamide
+C02378
+6-Aminohexanoate; 6-Aminohexanoic acid; Epsilcapramine; 6-Aminocaproic acid
+C02385
+Amino acid(Arg-); Arginine; 2-Amino-5-guanidinovaleric acid
+C02486
+(3R)-beta-Leucine; (3R)-3-Amino-4-methylpentanoic acid; (3R)-3-Amino-4-methylvaleric acid
+C02518
+4-Aminosalicylate; 4-Aminosalicylic acid
+C02546
+Glycyl amino acid
+C02847
+N-Acetyl amino acid
+C02850
+N-Acyl-L-amino acid
+C02853
+N-Formyl amino acid
+C02954
+6-Aminopenicillanate; 6-Aminopenicillanic acid
+C03005
+N-Methylanthranilate; N-Methylanthranilic acid; 2-(Methylamino)benzoic acid
+C03135
+N-Acetyl-D-amino acid
+C03141
+N-Benzoylanthranilate; 2-Benzoylaminobenzoic acid
+C03148
+N-Methyl-L-amino acid
+C03296
+N2-Succinyl-L-arginine; (2S)-2-(3-Carboxypropanoylamino)-5-(diaminomethylideneamino)pentanoic acid
+C03317
+alpha-Amino acid ester
+C03341
+2-Amino-4-oxopentanoic acid; 2-Amino-4-oxopentanoate; (2R)-2-Amino-4-oxopentanoate
+C03349
+3-Aminopropanesulfonate; 3-Amino-1-propanesulfonic acid
+C03363
+5-L-Glutamyl amino acid; L-gamma-Glutamyl amino acid
+C03401
+L-2,3-Diaminopropanoate; L-2,3-Diaminopropionate; L-2,3-Diaminopropionic acid; L-2,3-Diaminopropanoic acid; 3-Amino-L-alanine; (S)-2,3-Diaminopropanoate
+C03415
+N2-Succinyl-L-ornithine; (2S)-5-Amino-2-(3-carboxypropanoylamino)pentanoic acid
+C03493
+D-4-Hydroxyphenylglycine; (alphaR)-alpha-Amino-4-hydroxybenzeneacetic acid
+C03508
+L-2-Amino-3-oxobutanoic acid; L-2-Amino-3-oxobutanoate; L-2-Amino-acetoacetate; (S)-2-Amino-3-oxobutanoic acid
+C03510
+L-Methionine sulfoximine; (2S)-2-Amino-4-(S-methylsufonimidoyl)-butanoic acid
+C03523
+N-Substituted amino acid
+C03656
+(S)-5-Amino-3-oxohexanoic acid; (S)-5-Amino-3-oxohexanoate
+C03665
+2-Amino-2-methylpropanoate; 2-Aminoisobutyric acid
+C03678
+4-Amino-3-hydroxybutanoate; 4-Amino-3-hydroxybutanoic acid; gamma-Amino-beta-hydroxybutyric acid; GABOB
+C03740
+(5-L-Glutamyl)-L-amino acid; L-gamma-Glutamyl-L-amino acid; alpha-(gamma-L-Glutamyl)-L-amino acid
+C03752
+2-Amino-2-deoxy-D-gluconate; D-Glucosaminate; D-Glucosaminic acid; Glucosaminate
+C03782
+D-(1-Aminoethyl)phosphonate; D-(1-Aminoethyl)phosphonic acid
+C03806
+Substituted beta-amino acid
+C03969
+1-Aminocyclopentanecarboxylate; 1-Aminocyclopentanecarboxylic acid; Cycloleucine
+C04075
+2-Amino-4-chloro-4-pentenoic acid; (S)-2-Amino-4-chloro-4-pentenoic acid; L-2-Amino-4-chloropent-4-enoate
+C04209
+3-(Carboxycarbonylamino)-L-alanine; N3-Oxalyl-L-2,3-diaminopropanoate; L-alpha-Amino-beta-oxalylaminopropionic acid; beta-ODAP
+C04313
+beta-Substituted alpha-L-amino acid
+C04462
+N-Succinyl-2-L-amino-6-oxoheptanedioate; N-Succinyl-L-2-amino-6-oxoheptanedioate; N-Succinyl-L-2-amino-6-oxopimelate; N-Succinyl-2-amino-6-oxo-L-pimelic acid; N-Succinyl-epsilon-keto-L-aminopimelic acid; (S)-2-(Succinylamino)-6-oxoheptanedioate
+C05042
+Glufosinate; Phosphinothricin; 2-Amino-4-(hydroxymethylphosphinyl)butanoic acid
+C05145
+3-Aminoisobutyric acid; 3-Aminoisobutanoate; 3-Amino-2-methylpropanoate
+C05167
+alpha-Amino acid
+C05226
+N-Carbamoyl-D-amino acid
+C05330
+Homocysteine; 2-Amino-4-mercaptobutyric acid
+C05353
+TES; N-Tris(hydroxymethyl)methyl-2-aminoethanesulfonic acid
+C05516
+5-Amino-4-imidazole carboxylate; 4-Amino-5-imidazolecarboxylic acid
+C05520
+2-Amino-3-oxoadipate; 2-Amino-3-oxohexanedioic acid
+C05574
+3-Aminopentanedioate; Isoglutamate; Isoglutamic acid; 3-Aminopentanedioic acid
+C05653
+Formylanthranilate; N-Formylanthranilate; 2-(Formylamino)-benzoic acid
+C05683
+Ciliatocholate; Ciliatocholic acid; 2-Aminoethylphosphocholate
+C05710
+N-Hydroxy-amino acid; N-Hydroxy-L-amino acid
+C05715
+gamma-Amino-gamma-cyanobutanoate; 4-Amino-4-cyanobutanoic acid
+C05717
+alpha-Amino-gamma-cyanobutanoate; 2-Amino-4-cyanobutanoic acid
+C05931
+N-Succinyl-L-glutamate; (2S)-2-(3-Carboxypropanoylamino)pentanedioic acid
+C05932
+N-Succinyl-L-glutamate 5-semialdehyde; (2S)-2-(3-Carboxypropanoylamino)-5-oxopentanoic acid
+C05945
+L-Arginine phosphate; N5-[Imino(phosphonoamino)methyl]L-ornithine; omega-N-Phosphoarginine; Arginine phosphate; L-Arginine-NG-phosphoric acid; Phosphoarginine A; N-Phospho-L-arginine; N(omega)-Phospho-L-arginine; Phosphoarginine
+C06240
+UDP-N-acetyl-D-mannosaminouronate; UDP-N-acetyl-2-amino-2-deoxy-D-mannuronate; UDP-N-acetyl-D-mannosaminuronic acid; UDP-N-acetyl-alpha-D-mannosaminuronate
+C06332
+N-Acetylanthranilate; 2-(Acetylamino)-benzoic acid; N-Acetylanthranilic acid
+C06333
+2-Aminobenzenesulfonate; 2-Aminobenzenesulfonic acid; o-Aminobenzenesulfonic acid; Orthanilic acid
+C06334
+Metanilic acid; 3-Aminobenzenesulfonate; 3-Aminobenzenesulfonic acid; m-Aminobenzenesulfonic acid
+C06335
+4-Aminobenzenesulfonate; 4-Aminobenzenesulfonic acid; p-Aminobenzenesulfonic acid; Sulfanilic acid
+C06378
+N-Acyl-D-amino acid
+C06393
+2,3-Diaminopropanoate; 2,3-Diaminopropionate; 2,3-Diaminopropionic acid; 2,3-Diaminopropanoic acid
+C06417
+D-Valine; (R)-2-Amino-3-methylbutyric acid
+C06418
+D-Isoleucine; (2R,3R)-2-Amino-3-methylvaleric acid
+C06419
+D-Histidine; (R)-alpha-Amino-1H-imidazole-4-propionic acid
+C06420
+D-Tyrosine; (R)-3-(p-Hydroxyphenyl)alanine; (R)-2-Amino-3-(p-hydroxyphenyl)propionic acid
+C06469
+Neuraminic acid; 5-Amino-3,5-dideoxy-D-glycero-D-galacto-2-nonulosonic acid
+C06470
+Muramic acid; 3-O-alpha-Carboxyethyl-D-glucosamine; 2-Amino-3-O-[(R)-1-carboxyethyl]-2-deoxy-D-glucopyranose
+C07279
+2-Aminoethylarsonate; 2-Aminoethylarsonic acid
+C07659
+Sulfathalidine; Phthalylsulfathiazole; 2-[[[4-[(2-Thiazolylamino)sulfonyl]phenyl]amino]carbonyl]benzoic acid
+C07662
+Sparfloxacin; cis-5-Amino-1-cyclopropyl-7-(3,5-dimethyl-1-piperazinyl)-6,8-difluoro-1,4-dihydro-4-oxo-3-quinolinecarboxylic acid
+C07752
+Alendronic acid; Alendronate; (4-Amino-1-hydroxybutylidene)bisphosphonic acid
+C07756
+7-Aminocephalosporanic acid; 7-Aminocephalosporinic acid; 7-ACA; (7R)-7-Aminocephalosporanate
+C08264
+L-Albizziine; Albizziin; L-2-Amino-3-ureidopropionic acid
+C08266
+L-alpha-Amino-gamma-oxalylaminobutyric acid
+C08298
+Tricholomic acid; alpha-Amino-3-oxo-5-isoxazolidineacetic acid
+C11033
+1-Aminomethylphosphonic acid; Aminomethylphosphonate; AMPA
+C11529
+N-Carbamoyl-L-amino acid; N-Carbamoyl-L-2-amino acid
+C12025
+2,6-Diamino-7-hydroxy-azelaic acid
+C12027
+2-Amino-9,10-epoxy-8-oxodecanoic acid
+C12107
+3-Amino-5-hydroxybenzoate; AHBA; 3-Amino-5-hydroxybenzoic acid; 3-Ahba
+C12108
+5-Amino-5-deoxy-3-dehydroshikimate; AminoDHS; 5-Deoxy-5-amino-3-dehydroshikimic acid
+C12109
+AminoDHQ; 5-Deoxy-5-amino-3-dehydroquinic acid
+C12110
+Gabaculine; 3-Amino-2,3-dihydrobenzoic acid
+C12115
+3-Amino-4-hydroxybenzoate; 3-Amino-4-hydroxybenzoic acid; 3,4-AHBA
+C12121
+5-Deoxy-5-aminoshikimic acid
+C13104
+Aluminoparaaminosalicylate calcium; Alumino-p-aminosalicylic acid calcium salt
+C13672
+AMPA; alpha-Amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid
+C13673
+(S)-ACPA; (S)-2-Amino-3-(3-carboxy-5-methyl-4-isoxazolyl)porionic acid
+C13695
+ZAPA; (Z)-3-((Aminoiminomethyl)thio)-2-propenoic acid
+C13696
+trans-3-Aminocyclopentane-1-carboxylic acid
+C13705
+5-Nitro-2-(3-phenylpropylamino)benzoic acid; NPPB
+C13734
+2-Amino-5-phosphopentanoic acid
+C13739
+(R)-AMAA; (R)-2-Amino-2-(3-hydroxy-5-methyl-4-isoxazolyl)acetic acid
+C13771
+S9947; 2'-(Benzyloxycarbonylaminomethyl)biphenyl-2-carboxylic acid 2-(2-pyridyl)ethylamide
+C13795
+2S-Amino-tridecanoic acid; 2S-Amino-tridecanoate; (S)-2-Aminotridecanoic acid
+C13826
+Retigabine; D-23129; N-(2-Amino-4-(4-fluorobenzylamino)-phenyl) carbamic acid ethyl ester
+C14170
+p-Aminosalicylic acid methyl ester
+C14310
+Picloram; 4-Amino-3,5,6-trichloropyridine-2-carboxylic acid
+C15599
+6-(2-Amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylate; 6-(2-Amino-2-carboxyethyl)-7,8-dioxo-1,2,3,4,7,8-hexahydroquinoline-2,4-dicarboxylic acid
+C16116
+L-Aminoacyl-L-amino acid
+C16235
+o-Hydroxylaminobenzoate; 2-Hydroxylaminobenzoic acid
+C16511
+L-Homocysteic acid; (2S)-2-Amino-4-sulfobutanoic acid
+C16632
+alpha-Fluoro-beta-alanine; 3-Amino-2-fluoropropionic acid
+C16673
+Isoglutamine; 4,5-Diamino-5-oxopentanoic acid; DL-Isoglutamine
+C16837
+4-Amino-1-piperidinecarboxylic acid
+C16850
+2-Amino-3,7-dideoxy-D-threo-hept-6-ulosonic acid
+C17221
+Trihomomethionine; L-Trihomomethionine; 2-Amino-7-(methylsulfanyl)heptanoic acid
+C17234
+2-Aminobut-2-enoate; (2Z)-2-Aminobut-2-enoic acid; 2-Ammoniobut-2-enoate
+C17266
+Homoamino acid
+C17309
+Cilazaprilat; (1S,9S)-9-((S)-1-Carboxy-3-phenylpropylamino)-10-oxo-4,6,7,8,9,10-hexahydro-1H-pyridazino[1,2-a][1,2]diazepine-1-carboxylic acid
+C17942
+FR 900098; (3-(Acetylhydroxyamino)propyl)phosphonic acid
+C17948
+Deamino-alpha-keto-demethylphosphinothricin; 4-(Hydroxyphosphinyl)-2-oxobutyric acid; 2-Oxo-4-phosphinobutanoate; 4-Hydrohydroxyphosphoryl-2-oxobutanoate
+C17962
+Demethylphosphinothricin; (2S)-2-Amino-4-(hydroxyphosphinyl)butanoic acid
+C18090
+Tricaine; 3-Aminobenzoic acid; m-Aminobenzoate
+C18172
+Carboxyspermidine; 2-Amino-4-[(4-aminobutyl)amino]-butanoic acid
+C18472
+L-Capreomycidine; (2S,3R)-Capreomycidine; (S)-2-Amino-2-[(R)-2-iminohexahydropyrimidin-4-yl]acetic acid
+C19325
+11-Aminoundecanoic acid
+C19694
+D-Alanyl-(R)-lactate; D-Alanyl-D-lactate; (2R)-2-(D-Alanyloxy)propanoic acid; (R)-2-[(R)-2-Aminopropanoyloxy]propanoic acid
+C19830
+(5S,6S)-6-Amino-5-hydroxycyclohexa-1,3-diene-1-carboxylate; trans-2,3-Dihydro-3-hydroxyanthranilate; trans-2,3-Dihydro-3-hydroxyanthranilic acid; DHHA
+C19998
+Anatoxin a(s); Anatoxin-A(S); Phosphoric acid, mono[(5S)-2-amino-5-[(dimethylamino)methyl]-4,5-dihydro-1H-imidazol-1-yl] monomethyl ester
+C20082
+Pseudaminic acid; 5,7-Bis(acetylamino)-3,5,7,9-tetradeoxy-L-glycero-alpha-L-manno-2-nonulopyranosonic acid
+C20639
+O-Ureido-L-serine; (2S)-2-Amino-3-[(carbamoylamino)oxy]propanoate; (2S)-2-Amino-3-(carbamoylamino)oxypropanoic acid
+C20644
+2-Amino-4,5-dihydroxy-6-oxo-7-(phosphooxy)heptanoate; 2-Amino-4,5-dihydroxy-6-oxo-7-(phosphonooxy)heptanoate; 2-Amino-4,5-dihydroxy-6-oxo-7-(phosphonooxy)heptanoic acid; 2-Amino-4,5-dihydroxy-6-one-heptanoic acid-7-phosphate
+C20651
+O-Ureido-D-serine; (2R)-2-Amino-3-[(carbamoylamino)oxy]propanoate; (2R)-2-Amino-3-(carbamoylamino)oxypropanoic acid
+C20735
+N-Acyl-aromatic-L-amino acid
+C20788
+Homocystine; 4,4'-Dithiobis(2-aminobutyric acid)
+C20929
+3alpha-Hydroxy-3-aminoacylmonobactamic acid
+C21099
+L-Arginyl-L-amino acid
+C21509
+Jasmonoyl-L-amino acid
+C21577
+LY404039; (1R,4S,5S,6S)-4-Amino-2-thiabicyclo[3.1.0]hexane-4,6-dicarboxylic acid 2,2-dioxide
+C21696
+12-Hydroxyjasmonoyl-L-amino acid
+C21697
+12-Hydroxy-12-oxojasmonoyl-L-amino acid
+C21699
+12-Oxojasmonoyl-L-amino acidC00037
+C00041
+C00045
+C00047
+C00049
+C00062
+C00064
+C00065
+C00073
+C00077
+C00078
+C00079
+C00082
+C00097
+C00099
+C00108
+C00123
+C00133
+C00135
+C00151
+C00152
+C00155
+C00183
+C00188
+C00217
+C00245
+C00263
+C00302
+C00303
+C00308
+C00327
+C00334
+C00405
+C00407
+C00430
+C00431
+C00449
+C00491
+C00506
+C00519
+C00568
+C00666
+C00680
+C00716
+C00736
+C00739
+C00768
+C00792
+C00793
+C00806
+C00819
+C00820
+C00855
+C00857
+C00872
+C00956
+C01021
+C01037
+C01076
+C01092
+C01110
+C01234
+C01401
+C01420
+C01513
+C01536
+C01563
+C01570
+C01586
+C01602
+C01614
+C01733
+C01799
+C01826
+C01933
+C02057
+C02220
+C02261
+C02265
+C02356
+C02362
+C02378
+C02385
+C02486
+C02518
+C02546
+C02847
+C02850
+C02853
+C02954
+C03005
+C03135
+C03141
+C03148
+C03296
+C03317
+C03341
+C03349
+C03363
+C03401
+C03415
+C03493
+C03508
+C03510
+C03523
+C03656
+C03665
+C03678
+C03740
+C03752
+C03782
+C03806
+C03969
+C04075
+C04209
+C04313
+C04462
+C05042
+C05145
+C05167
+C05226
+C05330
+C05353
+C05516
+C05520
+C05574
+C05653
+C05683
+C05710
+C05715
+C05717
+C05931
+C05932
+C05945
+C06240
+C06332
+C06333
+C06334
+C06335
+C06378
+C06393
+C06417
+C06418
+C06419
+C06420
+C06469
+C06470
+C07279
+C07659
+C07662
+C07752
+C07756
+C08264
+C08266
+C08298
+C11033
+C11529
+C12025
+C12027
+C12107
+C12108
+C12109
+C12110
+C12115
+C12121
+C13104
+C13672
+C13673
+C13695
+C13696
+C13705
+C13734
+C13739
+C13771
+C13795
+C13826
+C14170
+C14310
+C15599
+C16116
+C16235
+C16511
+C16632
+C16673
+C16837
+C16850
+C17221
+C17234
+C17266
+C17309
+C17942
+C17948
+C17962
+C18090
+C18172
+C18472
+C19325
+C19694
+C19830
+C19998
+C20082
+C20639
+C20644
+C20651
+C20735
+C20788
+C20929
+C21099
+C21509
+C21577
+C21696
+C21697
+C21699
+C00037
+C00041
+C00045
+C00047
+C00049
+C00062
+C00064
+C00065
+C00073
+C00077
+C00078
+C00079
+C00082
+C00097
+C00099
+C00108
+C00123
+C00133
+C00135
+C00151
+C00152
+C00155
+C00183
+C00188
+C00217
+C00245
+C00263
+C00302
+C00303
+C00308
+C00327
+C00334
+C00405
+C00407
+C00430
+C00431
+C00449
+C00491
+C00506
+C00519
+C00568
+C00666
+C00680
+C00716
+C00736
+C00739
+C00768
+C00792
+C00793
+C00806
+C00819
+C00820
+C00855
+C00857
+C00872
+C00956
+C01021
+C01037
+C01076
+C01092
+C01110
+C01234
+C01401
+C01420
+C01513
+C01536
+C01563
+C01570
+C01586
+C01602
+C01614
+C01733
+C01799
+C01826
+C01933
+C02057
+C02220
+C02261
+C02265
+C02356
+C02362
+C02378
+C02385
+C02486
+C02518
+C02546
+C02847
+C02850
+C02853
+C02954
+C03005
+C03135
+C03141
+C03148
+C03296
+C03317
+C03341
+C03349
+C03363
+C03401
+C03415
+C03493
+C03508
+C03510
+C03523
+C03656
+C03665
+C03678
+C03740
+C03752
+C03782
+C03806
+C03969
+C04075
+C04209
+C04313
+C04462
+C05042
+C05145
+C05167
+C05226
+C05330
+C05353
+C05516
+C05520
+C05574
+C05653
+C05683
+C05710
+C05715
+C05717
+C05931
+C05932
+C05945
+C06240
+C06332
+C06333
+C06334
+C06335
+C06378
+C06393
+C06417
+C06418
+C06419
+C06420
+C06469
+C06470
+C07279
+C07659
+C07662
+C07752
+C07756
+C08264
+C08266
+C08298
+C11033
+C11529
+C12025
+C12027
+C12107
+C12108
+C12109
+C12110
+C12115
+C12121
+C13104
+C13672
+C13673
+C13695
+C13696
+C13705
+C13734
+C13739
+C13771
+C13795
+C13826
+C14170
+C14310
+C15599
+C16116
+C16235
+C16511
+C16632
+C16673
+C16837
+C16850
+C17221
+C17234
+C17266
+C17309
+C17942
+C17948
+C17962
+C18090
+C18172
+C18472
+C19325
+C19694
+C19830
+C19998
+C20082
+C20639
+C20644
+C20651
+C20735
+C20788
+C20929
+C21099
+C21509
+C21577
+C21696
+C21697
+C21699
+C00041
+C00047
+C00062
+C00065
+C00077
+C00079
+C00097
+C00108
+C00133
+C00151
+C00155
+C00188
+C00245
+C00302
+C00308
+C00334
+C00407
+C00431
+C00491
+C00519
+C00666
+C00716
+C00739
+C00792
+C00806
+C00820
+C00857
+C00956
+C01037
+C01092
+C01234
+C01420
+C01536
+C01570
+C01602
+C01733
+C01826
+C02057
+C02261
+C02356
+C02378
+C02486
+C02546
+C02850
+C02954
+C03135
+C03148
+C03317
+C03349
+C03401
+C03493
+C03510
+C03656
+C03678
+C03752
+C03806
+C04075
+C04313
+C05042
+C05167
+C05330
+C05516
+C05574
+C05683
+C05715
+C05931
+C05945
+C06332
+C06334
+C06378
+C06417
+C06419
+C06469
+C07279
+C07662
+C07756
+C08266
+C11033
+C12025
+C12107
+C12109
+C12115
+C13104
+C13673
+C13696
+C13734
+C13771
+C13826
+C14310
+C16116
+C16511
+C16673
+C16850
+C17234
+C17309
+C17948
+C18090
+C18472
+C19694
+C19998
+C20639
+C20651
+C20788
+C21099
+C21577
+C21697
