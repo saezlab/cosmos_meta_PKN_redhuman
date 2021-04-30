@@ -1,10 +1,27 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue233;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c93333;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+# COSMOS PKN generation script
 
-\f0\fs24 \cf0 Model obtained from : {\field{\*\fldinst{HYPERLINK "https://www.vmh.life/#downloadview"}}{\fldrslt 
-\f1 \cf2 \expnd0\expndtw0\kerning0
-\ul \ulc2 \outl0\strokewidth0 \strokec2 https://www.vmh.life/#downloadview}}}
+## Introduction
+
+This repository contains the scripts necessary to generate the COSMOS meta PKN, combining omnipath for PPIs, STITCHdb for allosteric regulations and redHuman metabolic reaction entwork for the metabolic part.
+
+In short, run scripts in their numbered order to generate the cosmos_PKN.csv file. (scripts are in the script folder)
+
+## 01: Metabolic reaction network (01alt_ocean_redhuman_to_df.R)
+
+The first script requires the ocean package to be installed (https://github.com/saezlab/ocean). Indeed, the ocean package allows to quickly generate and process the redHuman metabolic reaction network (https://www.nature.com/articles/s41467-020-16549-2) in a sif format compatible with the other ressources (STITCHdb and omnipath).
+
+This script also generates linkers to connect the metabolic enzyems of the reaction network with the omnipath PPI network.
+
+## 02: Allosteric regulations (02alt_STITCH_to_SIF.R)
+
+This scripts requires to download the expanded chemical link information file of stitch db (http://stitch.embl.de/cgi/download.pl?UserId=egbsSvpFLSc8&sessionId=q5Z8nf55HyjV&species_text=Homo+sapiens).
+
+It first filters out textmining based interactions from the STITCH allosteric regulatio list. Then, it formats the identifiers of STITCH to be coherent with the other ressources.
+
+## 03: omnipath PPI (03alt_clean_omnipath.R)
+
+This scripts generates a signed directed PPI from all inteeractions available in the omnipathR package.
+
+## 04: Joining the pieces together (04alt_FUSION.R)
+
+This script imports the three previously generated parts of the cosmos PKN and combines them together in a single network. It also filters out from STITCHdb allosteric reactions that do not involve an genes present in omnipath or  the metabolic reaction network.
