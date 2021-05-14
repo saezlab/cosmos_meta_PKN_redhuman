@@ -204,7 +204,7 @@ sub_network_nocofact$sign <- 1
 row.names(sub_network_nocofact) <- 1:length(sub_network_nocofact$source)
 
 #there are some > left in the connectors part, will remove them manually with a magic number
-sub_network_nocofact[2053:2780,1] <- gsub(">","",sub_network_nocofact[2053:2780,1])
+sub_network_nocofact[2020:2742,1] <- gsub(">","",sub_network_nocofact[2020:2742,1])
 
 sub_network_nocofact$source <- gsub("XGene__","XGene0__",sub_network_nocofact$source)
 sub_network_nocofact$target <- gsub("XGene__","XGene0__",sub_network_nocofact$target)
