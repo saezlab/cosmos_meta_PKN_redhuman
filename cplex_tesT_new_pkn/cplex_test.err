@@ -1,0 +1,82 @@
+Parsed with column specification:
+cols(
+  .default = col_double()
+)
+See spec(...) for full column specifications.
+Parsed with column specification:
+cols(
+  .default = col_double()
+)
+See spec(...) for full column specifications.
+Parsed with column specification:
+cols(
+  ID = col_double(),
+  logFC = col_double(),
+  AveExpr = col_double(),
+  t = col_double(),
+  P.Value = col_double(),
+  adj.P.Val = col_double(),
+  B = col_double()
+)
+Parsed with column specification:
+cols(
+  source = col_character(),
+  interaction = col_double(),
+  target = col_character()
+)
+
+'select()' returned 1:1 mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+Writing constraints...
+Solving LP problem...
+Saving results...
+ 
+--- End of the CARNIVAL pipeline ---
+ 
+COSMOS: The following signaling nodes are not found in the PKN and will be removed from input: X4212 and 0 more.
+Warning messages:
+1: In controlNodeIdentifiers(netObj = netObj) :
+  Your network contains identifiers with '-' symbol and they will
+            be replaced with '_'
+2: In controlNodeIdentifiers(netObj = netObj) :
+  Your network contains identifiers with '>' symbol and they will
+            be replaced with '_'
+Input nodes should have values from {-1, 0, 1}. We discretize your input with sign().
+Writing constraints...
+Solving LP problem...
+Saving results...
+ 
+--- End of the CARNIVAL pipeline ---
+ 
+Warning messages:
+1: In controlNodeIdentifiers(netObj = netObj) :
+  Your network contains identifiers with '-' symbol and they will
+            be replaced with '_'
+2: In controlNodeIdentifiers(netObj = netObj) :
+  Your network contains identifiers with '>' symbol and they will
+            be replaced with '_'
+'select()' returned 1:1 mapping between keys and columns
+'select()' returned 1:1 mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+Writing constraints...
+Solving LP problem...
+Saving results...
+ 
+--- End of the CARNIVAL pipeline ---
+ 
+Warning message:
+In controlNodeIdentifiers(netObj = netObj) :
+  Your network contains identifiers with '>' symbol and they will
+            be replaced with '_'
+Input nodes should have values from {-1, 0, 1}. We discretize your input with sign().
+Writing constraints...
+Solving LP problem...
+Saving results...
+ 
+--- End of the CARNIVAL pipeline ---
+ 
+Warning message:
+In controlNodeIdentifiers(netObj = netObj) :
+  Your network contains identifiers with '>' symbol and they will
+            be replaced with '_'
+'select()' returned 1:1 mapping between keys and columns
