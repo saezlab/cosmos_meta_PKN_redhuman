@@ -1,33 +1,36 @@
 library(readr)
 
 ### Import the high confidence interactions of STITCH
-STITCH_900 <- as.data.frame(read_delim("Dropbox/Meta_PKN/STITCH_network/STITCH_900.tsv", 
+STITCH <- as.data.frame(read_delim("Dropbox/meta_PKN_redhuman/STITCH_network/9606.actions.v5.0.tsv", 
                                        "\t", escape_double = FALSE, trim_ws = TRUE))
+
+STITCH <- STITCH[STITCH$mode == "activation" | STITCH$mode == "inhibition",]
 
 ####THIS SECTION TO REMOVE TEXTMINING, download this file from STITCHdb website
 X9606_protein_chemical_links_detailed_v5_0 <- as.data.frame(read_delim("Dropbox/Meta_PKN/STITCH_network/9606.protein_chemical.links.detailed.v5.0.tsv", 
                                                                        "\t", escape_double = FALSE, trim_ws = TRUE))
+threshold <- 700
 
-not_text_mining <- X9606_protein_chemical_links_detailed_v5_0[X9606_protein_chemical_links_detailed_v5_0$combined_score >= 900,]
+not_text_mining <- X9606_protein_chemical_links_detailed_v5_0[X9606_protein_chemical_links_detailed_v5_0$combined_score >= threshold,]
 rm(X9606_protein_chemical_links_detailed_v5_0)
 
 not_text_mining$ID <- paste(not_text_mining$chemical, not_text_mining$protein , sep = "_")
 not_text_mining$ID_reverse <- paste(not_text_mining$protein, not_text_mining$chemical, sep = "_")
 
 not_text_mining <- not_text_mining[(not_text_mining$experimental + not_text_mining$prediction + not_text_mining$prediction +
-                                      not_text_mining$database) >= 900,]
+                                      not_text_mining$database) >= threshold,]
 
 ### We only care about allosteric interactions
-STITCH_900 <- STITCH_900[STITCH_900$a_is_acting,]
-STITCH_900$ID <- paste(STITCH_900$item_id_a, STITCH_900$item_id_b, sep = "_")
-STITCH_900 <- STITCH_900[STITCH_900$ID %in% not_text_mining$ID | STITCH_900$ID %in% not_text_mining$ID_reverse,]
-STITCH_900 <- STITCH_900[,-7]
+STITCH <- STITCH[STITCH$a_is_acting,]
+STITCH$ID <- paste(STITCH$item_id_a, STITCH$item_id_b, sep = "_")
+STITCH <- STITCH[STITCH$ID %in% not_text_mining$ID | STITCH$ID %in% not_text_mining$ID_reverse,]
+STITCH <- STITCH[,-7]
 ####END OF REMOVE TEXTMINING
 
 ### We need to map the Ensembl Ids to NCBI gene ids
 
 ## We make a vector of uniue ensembl IDs
-prots <- unique(c(STITCH_900$item_id_a, STITCH_900$item_id_b))
+prots <- unique(c(STITCH$item_id_a, STITCH$item_id_b))
 prots <- prots[grepl("9606[.]ENSP", prots)]
 
 ## We remove the taxon ID so the IDs can be mapped
@@ -54,31 +57,31 @@ names(prots_vec) <- prots$prots
 ## Ids are converted in the STITCH interaciton dataframe
 for(i in 1:2)
 {
-  for(j in 1:length(STITCH_900[,1]))
+  for(j in 1:length(STITCH[,1]))
   {
-    if(STITCH_900[j,i] %in% names(prots_vec))
+    if(STITCH[j,i] %in% names(prots_vec))
     {
-      STITCH_900[j,i] <- prots_vec[STITCH_900[j,i]]
+      STITCH[j,i] <- prots_vec[STITCH[j,i]]
     }
     else
     {
-      STITCH_900[j,i] <- gsub("CID[a-z]0*","Metab__",STITCH_900[j,i])
+      STITCH[j,i] <- gsub("CID[a-z]0*","Metab__",STITCH[j,i])
     }
   }
 }
 
 ### We converted the interactions of STITCH into a SIF format
-STITCH_900$sign <- ifelse(STITCH_900$action == "inhibition", -1, 1)
-STITCH_900 <- STITCH_900[grepl("Metab__",STITCH_900$item_id_a),]
+STITCH$sign <- ifelse(STITCH$action == "inhibition", -1, 1)
+STITCH <- STITCH[grepl("Metab__",STITCH$item_id_a),]
 
-STITCH_900 <- STITCH_900[,c(1,7,2)]
-names(STITCH_900) <- c("source","sign","target")
+STITCH <- STITCH[,c(1,7,2)]
+names(STITCH) <- c("source","sign","target")
 
-STITCH_900$source <- paste(STITCH_900$source, "___c____", sep = "")
-STITCH_900$source <- paste("X",STITCH_900$source, sep = "")
-STITCH_900 <- STITCH_900[!grepl("ENSP",STITCH_900$target),]
-STITCH_900$target <- paste("X",STITCH_900$target,sep = "")
-STITCH_900 <- STITCH_900[,c(1,3,2)]
+STITCH$source <- paste(STITCH$source, "___c____", sep = "")
+STITCH$source <- paste("X",STITCH$source, sep = "")
+STITCH <- STITCH[!grepl("ENSP",STITCH$target),]
+STITCH$target <- paste("X",STITCH$target,sep = "")
+STITCH <- STITCH[,c(1,3,2)]
 
 ### Save the SIF network as csv
-write_csv(STITCH_900,"Dropbox/meta_PKN_redhuman/result/STITCH_900.csv")
+write_csv(STITCH,"Dropbox/meta_PKN_redhuman/result/STITCH.csv")

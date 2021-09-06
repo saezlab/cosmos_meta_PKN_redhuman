@@ -7,6 +7,9 @@ library(readr)
 
 
 all_pathways <- unique(recon2_redhuman$pathway)
+
+gene_mapping <- recon2_redhuman$gene_mapping
+
 sub_network <- model_to_pathway_sif(pathway_to_keep = all_pathways$X1)
 
 sub_network_nocofact <- remove_cofactors(sub_network)
@@ -17,6 +20,41 @@ sub_network_nocofact <- split_transaminases(sub_network_nocofact = sub_network_n
 
 sub_network_nocofact <- sub_network_nocofact$reaction_network
 
+gene_mapping_vec <- gene_mapping$X1
+names(gene_mapping_vec) <- gene_mapping$name
+for(j in 1:2)
+{
+  for(i in 1:length(sub_network_nocofact[,1]))
+  {
+    node <- sub_network_nocofact[i,j]
+    if(!grepl("cpd:",node))
+    {
+      reverse <- str_extract(node,"_reverse")
+      transam <- str_extract(node,"_glu[ag][kl][gu]")
+      suffixe <- str_extract(node,">[^_]+")
+      node <- gsub("[>_].*","",node)
+      if(node %in% names(gene_mapping_vec))
+      {
+        node <- gene_mapping_vec[node]
+        if(!is.na(suffixe))
+        {
+          node <- paste(node,suffixe,sep = "")
+        }
+        if(!is.na(reverse))
+        {
+          node <- paste(node,reverse,sep = "")
+        }
+        if(!is.na(transam))
+        {
+          node <- paste(node,transam,sep = "")
+        }
+        sub_network_nocofact[i,j] <- node
+      }
+    }
+  }
+}
+
+
 metabs <- unique(c(sub_network_nocofact$source, sub_network_nocofact$target))
 metabs <- metabs[grepl("cpd:",metabs)]
 metabs <- gsub("cpd:","",metabs)
@@ -25,8 +63,8 @@ metabs <- unique(metabs)
 
 mapping_p1 <- keggConv("pubchem", source = metabs[1:99], querySize = 99)
 mapping_p2 <- keggConv("pubchem", source = metabs[100:190], querySize = 90)
-
-mapping <- c(mapping_p1,mapping_p2)
+mapping_p3 <- keggConv("pubchem", source = metabs[191:202], querySize = 22)
+mapping <- c(mapping_p1,mapping_p2,mapping_p3)
 
 sid_to_cid <- list()
 for(i in 1:length(mapping))
@@ -73,8 +111,11 @@ sub_network_nocofact$target <- gsub("[.]",">",sub_network_nocofact$target)
 enzymes <- unique(c(sub_network_nocofact$source, sub_network_nocofact$target))
 enzymes <- enzymes[!grepl("XMetab",enzymes)]
 
-mapping_symbole_to_entrez <- mapIds(org.Hs.eg.db, enzymes, 'ENTREZID', 'SYMBOL')
-mapping_symbole_to_entrez <- mapping_symbole_to_entrez[!is.na(mapping_symbole_to_entrez)]
+sub_network_nocofact$source <- gsub("BCAT1","586",sub_network_nocofact$source)
+sub_network_nocofact$target <- gsub("BCAT1","586",sub_network_nocofact$target)
+
+# mapping_symbole_to_entrez <- mapIds(org.Hs.eg.db, enzymes, 'ENTREZID', 'SYMBOL')
+# mapping_symbole_to_entrez <- mapping_symbole_to_entrez[!is.na(mapping_symbole_to_entrez)]
 
 ###Build the connectors to omnipath
 
@@ -120,19 +161,19 @@ for(i in 1:length(sub_network_nocofact[,1]))
             {
               mega_complexe[[i]] <- i
             }
-
+            
           } else
           {
-            if(gsub(">.*","",element) %in% names(mapping_symbole_to_entrez))
-            {
-              if(grepl(">",element))
-              {
-                element <- gsub(".*>",paste(mapping_symbole_to_entrez[gsub(">.*","",element)],">",sep=""),element)
-              } else
-              {
-                element <- mapping_symbole_to_entrez[element]
-              }
-            }
+            # if(gsub(">.*","",element) %in% names(mapping_symbole_to_entrez))
+            # {
+            #   if(grepl(">",element))
+            #   {
+            #     element <- gsub(".*>",paste(mapping_symbole_to_entrez[gsub(">.*","",element)],">",sep=""),element)
+            #   } else
+            #   {
+            #     element <- mapping_symbole_to_entrez[element]
+            #   }
+            # }
             clean_elem <- element
             element <- paste("XGene__",paste(element,"_reverse",sep=""),sep="")
             gene_connectors_list[[k]] <- c(paste("X",gsub(">.*","",clean_elem),sep=""),element)
@@ -164,17 +205,17 @@ for(i in 1:length(sub_network_nocofact[,1]))
             
           } else
           {
-            if(gsub(">.*","",element) %in% names(mapping_symbole_to_entrez))
-            {
-              if(grepl(">",element))
-              {
-                element <- gsub(".*>",paste(mapping_symbole_to_entrez[gsub(">.*","",element)],">",sep=""),element)
-              } else
-              {
-                element <- mapping_symbole_to_entrez[element]
-              }
-              
-            }
+            # if(gsub(">.*","",element) %in% names(mapping_symbole_to_entrez))
+            # {
+            #   if(grepl(">",element))
+            #   {
+            #     element <- gsub(".*>",paste(mapping_symbole_to_entrez[gsub(">.*","",element)],">",sep=""),element)
+            #   } else
+            #   {
+            #     element <- mapping_symbole_to_entrez[element]
+            #   }
+            #   
+            # }
             clean_elem <- element
             element <- paste("XGene__",element,sep="")
             gene_connectors_list[[k]] <- c(paste("X",gsub(">.*","",clean_elem),sep=""),element)
@@ -184,12 +225,14 @@ for(i in 1:length(sub_network_nocofact[,1]))
         }
       }
     }
-  k <- k+1
+    k <- k+1
   }
 }
 gene_connectors <- as.data.frame(do.call(rbind,gene_connectors_list))
 gene_connectors <- unique(gene_connectors)
 gene_connectors <- gene_connectors[!grepl("X[A-Za-z]",gene_connectors[,1]),]
+gene_connectors$source <- gsub(">","",gene_connectors$source)
+gene_connectors <- unique(gene_connectors)
 
 mega_complexe <- unlist(mega_complexe)
 
@@ -204,7 +247,7 @@ sub_network_nocofact$sign <- 1
 row.names(sub_network_nocofact) <- 1:length(sub_network_nocofact$source)
 
 #there are some > left in the connectors part, will remove them manually with a magic number
-sub_network_nocofact[2044:2753,1] <- gsub(">","",sub_network_nocofact[2044:2753,1])
+# sub_network_nocofact[2044:2753,1] <- gsub(">","",sub_network_nocofact[2044:2753,1])
 
 sub_network_nocofact$source <- gsub("XGene__","XGene0__",sub_network_nocofact$source)
 sub_network_nocofact$target <- gsub("XGene__","XGene0__",sub_network_nocofact$target)

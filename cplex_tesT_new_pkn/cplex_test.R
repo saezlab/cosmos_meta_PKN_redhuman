@@ -1,7 +1,10 @@
 library(cosmosR)
 library(readr)
 
-setwd(dir = "Dropbox/cosmos_tests/")
+data(metabolite_to_pubchem)
+data(omnipath_ptm)
+
+setwd(dir = "~/Dropbox/meta_PKN_redhuman/cplex_tesT_new_pkn/")
 
 
 #In order to adapt options to users specification we can load them into a variable 
@@ -50,6 +53,18 @@ my_options$timelimit <- 7200
 
 test_result_for <- run_COSMOS_signaling_to_metabolism(data = test_for,
                                                       CARNIVAL_options = my_options)
+save(test_result_for, file = "cplex_res_formard.RData")
+
+metabolite_to_pubchem$name <- gsub(",","_",metabolite_to_pubchem$name)
+metabs <- metabolite_to_pubchem$pubchem
+metabolite_to_pubchem <- metabolite_to_pubchem$name
+names(metabolite_to_pubchem) <- metabs
+metabolite_to_pubchem["65359"] <- "GSSG"
+metabolite_to_pubchem["439756"] <- "O-acetylcarnitine"
+metabolite_to_pubchem["85"] <- "Carnitine"
+metabolite_to_pubchem["440641"] <- "F6P"
+metabolite_to_pubchem["165007"] <- "Sedoheptulose_7-phosphate"
+metabolite_to_pubchem["34755"] <- "S-adenosyl-L-methionine"
 
 test_result_for <- format_COSMOS_res(test_result_for,
                                      metab_mapping = metabolite_to_pubchem,
@@ -59,6 +74,8 @@ test_result_for <- format_COSMOS_res(test_result_for,
 
 #View(test_result_for[[1]]) #SIF
 #View(test_result_for[[2]]) #ATTRIBUTES
+write_csv(test_result_for[[1]], file = "forward_sif.csv")
+write_csv(test_result_for[[2]], file = "forward_att.csv")
 
 #### BACKWARD run of COSMOS, to connect metabolism to signaling
 my_options$timelimit <- 1800
@@ -78,6 +95,7 @@ my_options$timelimit <- 7200
 test_result_back <- run_COSMOS_metabolism_to_signaling(data = test_back,
                                                        CARNIVAL_options = my_options)
 
+save(test_result_back, file = "cplex_res_backward.RData")
 
 test_result_back <- format_COSMOS_res(test_result_back,
                                       metab_mapping = metabolite_to_pubchem,
@@ -96,4 +114,7 @@ full_attributes <- as.data.frame(rbind(test_result_for[[2]], test_result_back[[2
 full_sif <- unique(full_sif)
 full_attributes <- unique(full_attributes)
 
-save.image("cplex_res.RData")
+save.image("cplex_res_translated.RData")
+
+write_csv(full_sif, file = "Dropbox/meta_PKN_redhuman/cplex_tesT_new_pkn/full_sif.csv")
+write_csv(full_attributes, file = "Dropbox/meta_PKN_redhuman/cplex_tesT_new_pkn/full_att.csv")

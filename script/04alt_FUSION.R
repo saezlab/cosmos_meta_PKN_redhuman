@@ -21,7 +21,7 @@ redhuman_network <- redhuman_network[connectors_to_keep,]
 
 cosmos_PKN <- as.data.frame(rbind(clean_omnipath_PKN,redhuman_network))
 
-STITCH_900 <- as.data.frame(read_csv("result/STITCH_900.csv"))
+STITCH_900 <- as.data.frame(read_csv("result/STITCH.csv"))
 
 STITCH_900 <- STITCH_900[(STITCH_900$target %in% cosmos_PKN$source | STITCH_900$target %in% cosmos_PKN$target),]
 
