@@ -1,3 +1,6 @@
 STITCH_network/9606.protein_chemical.links.detailed.v5.0.tsv
 .DS_Store
 .Rhistory
+STITCH_network/9606.actions.v5.0.tsv
+STITCH_network/9606.protein_chemical.links.detailed.v5.0.tsv.gz
+STITCH_network/9606.protein_chemical.links.detailed.v5.0_old.tsv
